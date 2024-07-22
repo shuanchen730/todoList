@@ -1,0 +1,10 @@
+ENV: local
+Port: 3388
+ConnectionStrings:
+  Mysql:
+    Host: localhost
+    DataBase: todolist_DB
+    User: root
+    Password: qwe123
+    Port: 3306
+
