@@ -12,7 +12,7 @@ type Card struct {
 	ID       int    `json:"id"`
 	Name     string `json:"name"`
 	Location int64  `json:"location"` // card位置(1、2、3)排序用
-	// Tasks    []Task `json:"tasks"`
+	Tasks    []Task `json:"tasks"`
 }
 
 type CardRepository interface {

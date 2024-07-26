@@ -1,7 +1,6 @@
 package mysql
 
 import (
-	// "github.com/jinzhu/gorm"
 	"log"
 	"todoList/entities"
 
@@ -30,7 +29,7 @@ func (m *mysqlCardRepository) GetAllCards() (allCardContent []entities.Card, err
 			ID:       card.ID,
 			Name:     card.Name,
 			Location: card.Location,
-			// Tasks:    tasks,
+			Tasks:    tasks,
 		}
 		allCardContent = append(allCardContent, cardContent)
 	}

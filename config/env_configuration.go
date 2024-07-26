@@ -37,7 +37,7 @@ type MysqlConfig struct {
 func InitialEnvConfiguration() (err error) {
 	viper.SetConfigType("yaml")
 	viper.SetConfigName("config")
-	viper.AddConfigPath("..")
+	viper.AddConfigPath(".")
 	viper.SetEnvPrefix("app")
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 	bindEnvs(EnvConfig)
